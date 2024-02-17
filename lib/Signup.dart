@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:whatsappclone1/contacts.dart';
 
@@ -41,7 +40,7 @@ class _SignupState extends State<Signup> {
         password: _passwordController.text,
       );
 
-      // Use Navigator for navigation
+      
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Page1()),
@@ -55,8 +54,7 @@ class _SignupState extends State<Signup> {
         print('Error creating account: $e');
       }
 
-      // Display user-friendly error message
-      // You can show a snackbar or any other feedback mechanism
+      
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Error: ${e.message}'),
