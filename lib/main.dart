@@ -32,5 +32,5 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/page1', page: () => const Page1()),
       ],
     );
-  }//.
+  }
 }
