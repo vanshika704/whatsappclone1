@@ -40,7 +40,6 @@ class _SignupState extends State<Signup> {
         password: _passwordController.text,
       );
 
-      
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const Page1()),
@@ -54,7 +53,6 @@ class _SignupState extends State<Signup> {
         print('Error creating account: $e');
       }
 
-      
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text('Error: ${e.message}'),
